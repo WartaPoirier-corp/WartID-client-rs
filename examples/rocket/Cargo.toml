@@ -1,0 +1,10 @@
+[package]
+name = "wartid-client-example-rocket"
+version = "0.1.0"
+description = "WartID client example: rocket"
+authors = ["Edgar Onghena <dev@edgar.bzh>"]
+edition = "2018"
+
+[dependencies]
+rocket = { git = "https://github.com/SergioBenitez/Rocket", rev = "8d4d01106e2e10b08100805d40bfa19a7357e900" }
+wartid-client = { path = "../..", features = ["rocket"] }
